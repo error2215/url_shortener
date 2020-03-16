@@ -1,0 +1,18 @@
+version: '3'
+services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - "mongodata:/data/db"
+  web:
+    build: .
+    environment:
+      DOCKER_COMPOSE: "true"
+    ports:
+      - "3034:3034"
+    depends_on:
+      - mongo
+volumes:
+  mongodata:

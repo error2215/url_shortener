@@ -1,0 +1,22 @@
+---
+version: 1
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers: {}
+    url: http://localhost:3034/rd/asd
+    method: GET
+  response:
+    body: '{"success":false,"error":{"code":1,"message":"encoding/hex: invalid byte:
+      U+0073 ''s''"},"data":null}'
+    headers:
+      Content-Length:
+      - "99"
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 15 Mar 2020 17:45:08 GMT
+    status: 200 OK
+    code: 200
+    duration: ""

@@ -1,0 +1,25 @@
+---
+version: 1
+interactions:
+- request:
+    body: url=google.com
+    form:
+      url:
+      - google.com
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+    url: http://localhost:3034/api/v1/url_shortener
+    method: POST
+  response:
+    body: '{"success":true,"error":null,"data":{"alias":"5e6e40ab47053bf7736ddf0a"}}'
+    headers:
+      Content-Length:
+      - "73"
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 15 Mar 2020 14:50:19 GMT
+    status: 200 OK
+    code: 200
+    duration: ""

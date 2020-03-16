@@ -1,0 +1,23 @@
+---
+version: 1
+interactions:
+- request:
+    body: ""
+    form: {}
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+    url: http://localhost:3034/api/v1/url_shortener
+    method: POST
+  response:
+    body: '{"success":false,"error":{"code":1,"message":"Missing required params"},"data":null}'
+    headers:
+      Content-Length:
+      - "84"
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 15 Mar 2020 14:53:01 GMT
+    status: 200 OK
+    code: 200
+    duration: ""
