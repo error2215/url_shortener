@@ -1,4 +1,4 @@
-# simple_mongodb
+# url_shortener
 
 You can run this app by 2 ways:
   1) Run MongoDB separately in Docker container and app by yourself
